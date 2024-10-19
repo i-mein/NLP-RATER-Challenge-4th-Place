@@ -3,7 +3,7 @@ Final solution (3rd place) for the RATER Challenge organized by the Learning Age
 
 **Robust Algorithms for Thorough Essay Rating (RATER)**
 
-[Competition overview](https://the-learning-agency.com/robust-algorithms-for-thorough-essay-rating/overview/)
+Competition overview: [the-learning-agency.com/robust-algorithms-for-thorough-essay-rating](https://the-learning-agency.com/robust-algorithms-for-thorough-essay-rating/overview/)
 
 
 ### Challenge Task
