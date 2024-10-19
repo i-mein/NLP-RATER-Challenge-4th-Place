@@ -1,7 +1,7 @@
 # NLP-RATER-Challenge-3rd-Place
 Final solution (3rd place) for the RATER Challenge organized by the Learning Agency Lab 
 
-** Develop Robust Algorithms for Thorough Essay Rating (RATER) **
+**Robust Algorithms for Thorough Essay Rating (RATER)**
 
 [Competition overview](https://the-learning-agency.com/robust-algorithms-for-thorough-essay-rating/overview/)
 
