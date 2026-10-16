@@ -10,7 +10,7 @@ Start with the **[final solution](docs/RaterSolution_IoannisMeintanis.pdf)** for
 
 - [`src/`](src/) - installable RATER code and legacy experiment modules.
 - [`scripts/`](scripts/) - training, inference, and post-processing scripts.
-- [`det_utils/`](det_utils/) - separate GPU-cluster code used with Determined AI; kept independent of the local RATER package.
+- [`.determined-ai/`](.determined-ai/) - separate GPU-cluster code used with Determined AI; kept independent of the local RATER package.
 - [`nbs/`](nbs/) - historical experiment and analysis notebooks.
 - [`solutions/`](solutions/) - copied reference implementations and configurations.
 - [`docs/`](docs/) - final solution, project reports, and solution notes.
