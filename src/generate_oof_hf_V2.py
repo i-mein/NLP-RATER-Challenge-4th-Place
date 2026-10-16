@@ -42,8 +42,6 @@ args = ap.parse_args()
 # args.proba_th = 0.54
 #############################
 
-sys.path.append('/mnt/md1/Work/dev_IME/Git_hacks/Feedback3/src/')
-sys.path.append('/mnt/md1/Work/dev_IME/Git_hacks/Feedback3/src/models/')
 
 from models.debertabilstm import DebertaForTokenClassificationwithbiLSTM
 from models.longformerbilstm import LongformerForTokenClassificationwithbiLSTM

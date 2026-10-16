@@ -142,10 +142,8 @@ class CFG:
 
 # %%
 os.chdir('/workspace')
-sys.path.append('/workspace/')
-sys.path.append('/workspace/src/')
 
-from src.utils.utils import *
+from utils.utils import *
 
 DIR = Path("/workspace/data/")
 OUTPUT = Path(CFG.output + CFG.exp_name)
@@ -428,8 +426,8 @@ from transformers import (AutoModelForTokenClassification, AutoModel, AutoTokeni
 # from public_metric_2021 import score_feedback_comp
 from collections import OrderedDict
 
-from src.losses.jaccard import *
-from src.utils.RATER_MetricCode import compute_scores 
+from losses.jaccard import *
+from utils.RATER_MetricCode import compute_scores
 
 # LABEL2TYPE = ('Lead', 'Position', 'Claim', 'Counterclaim', 'Rebuttal',  'Evidence', 'Concluding Statement')
 # TYPE2LABEL = {t:l for l, t in enumerate(LABEL2TYPE)}

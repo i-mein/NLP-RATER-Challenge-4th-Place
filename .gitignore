@@ -13,6 +13,17 @@ wandb/
 .env
 CompetitorKey
 .DS_Store
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+data/raw/
+data/processed/
+outputs/
+checkpoints/
+artifacts/
+runs/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

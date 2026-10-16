@@ -90,11 +90,9 @@ def seed_everything(seed):
 
 # %cd /mnt/md1/Work/dev_IME/Git_hacks/Feedback3
 os.chdir('/mnt/md1/Work/dev_IME/Git_hacks/Feedback3')
-sys.path.append('/mnt/md1/Work/dev_IME/Git_hacks/Feedback3/src/')
-sys.path.append('/mnt/md1/Work/dev_IME/Git_hacks/Feedback3/')
 
 
-from src.utils import *
+from utils.utils import *
 
 DIR = Path("/mnt/md1/Work/dev_IME/Git_hacks/Feedback3/input/")
 OUTPUT = Path(CFG.output + CFG.exp_name)
@@ -1686,5 +1684,4 @@ def score_feedback_comp(pred_df, gt_df, return_class_scores=False):
 #   'Lead': 0.7827827827827828,
 #   'Position': 0.6626944720291295,
 #   'Rebuttal': 0.3880597014925373})
-
 

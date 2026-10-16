@@ -51,8 +51,6 @@ import warnings
 warnings.filterwarnings('ignore')
 
 os.chdir('/mnt/md1/Work/dev_IME/Git_hacks/Feedback3')
-sys.path.append('/mnt/md1/Work/dev_IME/Git_hacks/Feedback3/')
-sys.path.append('/mnt/md1/Work/dev_IME/Git_hacks/Feedback3/src/')
 
 ### CONFIG 
 
@@ -641,9 +639,9 @@ def word_decode(pred, b_pred, offset_mapping, text, **kwargs):
      
 
 
-from src.fp1_sol01.utils import get_offset_mapping, is_head
-from src.fp1_sol01.utils import get_feat
-from src.fp1_sol01.utils import feat_padding
+from fp1_sol01.utils import get_offset_mapping, is_head
+from fp1_sol01.utils import get_feat
+from fp1_sol01.utils import feat_padding
 
 
 def encode2(text, tokenizer, data, labels_to_ids, labels_to_ids2):
@@ -1077,7 +1075,7 @@ def word_decode2(pred, b_pred, e_pred, e_pred_cls, offset_mapping, text, **kwarg
 
     
 
-# from src.fp1_sol01.utils import word_decode
+# from fp1_sol01.utils import word_decode
 
 ## after_deal_helper --> pp_preds
 def pp_preds(train_ids_sub, args, segment_param):

@@ -146,12 +146,10 @@ class CFG:
 
 # %%
 os.chdir('/workspace')
-sys.path.append('/workspace/')
-sys.path.append('/workspace/src/')
 
-from src.utils.utils import *
-# from src.fp1_sol01.utils import Log, get_f1_score, after_deal
-# from src.fp1_sol01.utils import get_feat, dataset, Collate
+from utils.utils import *
+# from fp1_sol01.utils import Log, get_f1_score, after_deal
+# from fp1_sol01.utils import get_feat, dataset, Collate
 
 
 DIR = Path("/workspace/data/")
@@ -436,8 +434,8 @@ from transformers import (AutoModelForTokenClassification, AutoModel, AutoTokeni
 # from public_metric_2021 import score_feedback_comp
 from collections import OrderedDict
 
-from src.losses.jaccard import *
-from src.utils.RATER_MetricCode import compute_scores 
+from losses.jaccard import *
+from utils.RATER_MetricCode import compute_scores
 
 # LABEL2TYPE = ('Lead', 'Position', 'Claim', 'Counterclaim', 'Rebuttal',  'Evidence', 'Concluding Statement')
 # TYPE2LABEL = {t:l for l, t in enumerate(LABEL2TYPE)}
@@ -2721,5 +2719,4 @@ def remove_overlaps(pred_df, by_discourse=False, verbose=False, save=False):
 # pred_clean['discourse_type'].value_counts()
 
 # pred_removed['discourse_type'].value_counts()
-
 

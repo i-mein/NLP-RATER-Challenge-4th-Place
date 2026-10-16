@@ -229,7 +229,6 @@ class DebertaForTokenClassificationLSTM2Test(DebertaPreTrainedModel):
 
 
 import sys 
-sys.path.append('/mnt/md1/Work/dev_IME/Git_hacks/Feedback3/src/models')
 from  debertabilstm import DebertaForTokenClassificationwithbiLSTM
 
 

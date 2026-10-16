@@ -119,11 +119,9 @@ class CFG:
 
 # %%
 os.chdir('/workspace')
-sys.path.append('/workspace/')
-sys.path.append('/workspace/src/')
 
-from src.utils.utils import *
-from src.utils.wbf import *
+from utils.utils import *
+from utils.wbf import *
 
 DIR = Path("/workspace/data/")
 OUTPUT = "/workspace/results/exp18"

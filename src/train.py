@@ -42,12 +42,10 @@ os.environ["NUMEXPR_NUM_THREADS"] = "1"
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
 #########
-WANDB_API_KEY = "38bd45fb3e9503a4c0d1c76652c33b932ea0920b"   # UserSecretsClient().get_secret("wandb_api_key")
 os.environ["WANDB_PROJECT"] = "Feedback3"
 os.environ["WANDB_ENTITY"] = "ime"
 os.environ["WANDB_SILENT"] = "false"
 os.environ["WANDB_MODE"] = "online"
-os.environ["WANDB_API_KEY"] = WANDB_API_KEY
 
 print("Torch version", torch.__version__)
 print("Transformers version", transformers.__version__)
@@ -57,13 +55,10 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 gc.enable()
 
 ## =========================
-os.chdir('/mnt/md1/Work/dev_IME/Git_hacks/Feedback3/src1')
-
 # from dataset import *
 from dataset.dataset import collate
 from utils.utils import *
 
-sys.path.append('models')
 ## =========================
 
 def class2dict(f):
@@ -579,8 +574,6 @@ if __name__ == "__main__":
         for fold in range(cfg.n_folds):
             if fold in cfg.trn_fold:
                 run_fold(cfg, fold)
-
-
 
 
 

@@ -28,7 +28,6 @@ args = ap.parse_args()
 #     from model import DebertaForTokenClassificationwithbiLSTM
 
 import sys 
-sys.path.append('/mnt/md1/Work/dev_IME/Git_hacks/Feedback3/src/models/')
 
 from models.debertabilstm import DebertaForTokenClassificationwithbiLSTM
 from models.longformerbilstm import LongformerForTokenClassificationwithbiLSTM

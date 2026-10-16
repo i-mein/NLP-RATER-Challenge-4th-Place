@@ -391,7 +391,7 @@ def weighted_boxes_fusion(boxes_list, scores_list, labels_list, scores_eff_list0
 import math
 from tqdm import tqdm 
 
-# from src.utils.wbf import weighted_boxes_fusion
+# from utils.wbf import weighted_boxes_fusion
 
 def preprocess_for_wbf(df_list):
     boxes_list=[]

@@ -140,7 +140,6 @@ class LongformerForTokenClassificationLSTMV2(LongformerPreTrainedModel):
 ##### NEW model #####
 
 import sys 
-sys.path.append('/mnt/md1/Work/dev_IME/Git_hacks/Feedback3/src/')
 
 from models.longformerbilstm import LongformerForTokenClassificationwithbiLSTM 
 

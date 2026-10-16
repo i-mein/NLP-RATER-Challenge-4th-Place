@@ -17,8 +17,6 @@ args = ap.parse_args()
 
 
 import sys 
-sys.path.append('/workspace/src/')
-sys.path.append('/workspace/src/models/')
 
 from models.debertabilstm import DebertaForTokenClassificationwithbiLSTM
 from models.longformerbilstm import LongformerForTokenClassificationwithbiLSTM

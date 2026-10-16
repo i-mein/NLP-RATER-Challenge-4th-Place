@@ -156,12 +156,10 @@ class CFG:
 
 # %%
 os.chdir('/mnt/md1/Work/dev_IME/Git_hacks/Feedback3')
-sys.path.append('/mnt/md1/Work/dev_IME/Git_hacks/Feedback3/')
-sys.path.append('/mnt/md1/Work/dev_IME/Git_hacks/Feedback3/src/')
 
-from src.utils.utils import *
-from src.fp1_sol01.utils import Log
-# from src.fp1_sol01.utils import get_feat, dataset, Collate, get_f1_score, after_deal
+from utils.utils import *
+from fp1_sol01.utils import Log
+# from fp1_sol01.utils import get_feat, dataset, Collate, get_f1_score, after_deal
 
 
 DIR = Path("/mnt/md1/Work/dev_IME/Git_hacks/Feedback3/input/")
@@ -481,9 +479,9 @@ from transformers import (AutoModelForTokenClassification, AutoModel, AutoTokeni
 # from models import TextSpanDetector, DatasetTrain, CustomCollator, TYPE2LABEL
 # from awp import AWP
 
-from src.fp1_sol01.utils import Log # TODO mv to src.utils 
-from src.losses.jaccard import *
-from src.utils.RATER_MetricCode import compute_scores 
+from fp1_sol01.utils import Log # TODO mv to utils
+from losses.jaccard import *
+from utils.RATER_MetricCode import compute_scores
 
 # LABEL2TYPE = ('Lead', 'Position', 'Claim', 'Counterclaim', 'Rebuttal',  'Evidence', 'Concluding Statement')
 # TYPE2LABEL = {t:l for l, t in enumerate(LABEL2TYPE)}
@@ -2167,6 +2165,5 @@ print('removed spans:', pred_removed['discourse_type'].value_counts())
 
 
 # %%
-
 
 

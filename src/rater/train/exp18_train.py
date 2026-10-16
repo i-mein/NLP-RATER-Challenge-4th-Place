@@ -151,10 +151,8 @@ print(cfg)
 
 # %%
 os.chdir('/mnt/md1/Work/dev_IME/Git_hacks/Feedback3')
-sys.path.append('/mnt/md1/Work/dev_IME/Git_hacks/Feedback3/')
-sys.path.append('/mnt/md1/Work/dev_IME/Git_hacks/Feedback3/src/')
 
-from src.utils.utils import *
+from utils.utils import *
 
 cfg.experiment_name = CFG.exp_name
 
@@ -994,7 +992,7 @@ class DebertaForTokenClassificationLSTM2(DebertaPreTrainedModel):
         )
 
 # %%
-# from src.models.hf_debertabilstmV2 import DebertaForTokenClassificationLSTM2
+# from models.hf_debertabilstmV2 import DebertaForTokenClassificationLSTM2
 
 model = DebertaForTokenClassificationLSTM2.from_pretrained(CFG.model_name)
 
